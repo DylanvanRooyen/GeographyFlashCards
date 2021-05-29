@@ -1,0 +1,140 @@
+
+body{
+    background-image: url("world.png");
+    background-size: 100vw 100vh;
+}
+
+h1{
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+#content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3vw;
+    margin-left: 27vw;
+    width: 45vw;
+    height: 45vw;
+
+}
+.card:hover {
+    position: relative;
+    transform: rotateY(180deg) translate(33%);
+    transform-style: preserve-3d;
+    transition:all 1s linear;
+    display: flex;
+
+
+
+}/*
+#content .front{
+
+    background: mediumaquamarine ;
+    width: 9vw;
+    height: 9vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Odibee Sans', cursive;
+    font-size: larger;
+    border-radius: 1.5vw;
+    position: absolute;
+    z-index: 2;
+
+}*/
+.front{
+    background: mediumaquamarine ;
+    width: 9vw;
+    height: 9vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Odibee Sans', cursive;
+    font-size: larger;
+    border-radius: 1.5vw;
+    position: absolute;
+    z-index: 2;
+    backface-visibility: hidden;
+}
+/*
+#content .back{
+
+    background: #8fb8de ;
+    width: 9vw;
+    height: 9vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Odibee Sans', cursive;
+    font-size: larger;
+    border-radius: 1.5vw;
+    position: absolute;
+    z-index: 1;
+
+}*/
+.back{
+
+    background: #8fb8de ;
+    width: 9vw;
+    height: 9vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Odibee Sans', cursive;
+    font-size: larger;
+    border-radius: 1.5vw;
+    position: absolute;
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+#content:hover .card {
+
+}
+@media screen and (max-width: 480px){
+    body{
+        background-image: url("world.png");
+        background-size: 100vw ;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #content{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3vw;
+        margin-left: 27vw;
+        width: 45vw;
+        height: 45vw;
+    }
+
+    .card{
+        position: relative;
+    }
+    #content .front{
+
+        background: mediumaquamarine ;
+        width: 9vw;
+        height: 9vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Odibee Sans', cursive;
+        font-size: larger;
+        border-radius: 1.5vw;
+        position: absolute;
+    }
+    #content .back{
+
+        background: #8fb8de ;
+        width: 9vw;
+        height: 9vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Odibee Sans', cursive;
+        font-size: larger;
+        border-radius: 1.5vw;
+        position: absolute;
+    }
+
+}
